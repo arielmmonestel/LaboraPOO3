@@ -12,7 +12,6 @@ public class AplCuenta {
 	Cliente cliente1 = new Cliente("123", "Sebastian", "Rojas");
 	Cliente cliente2 = new Cliente("345", "Fiorella", "Hernadez");
 	Cuenta cuenta1 = new Cuenta(cliente1, 3000);
-	
 	Cuenta cuenta2 = new Cuenta(cliente2, 1500);
 
 	cuenta1.depositar(1500);

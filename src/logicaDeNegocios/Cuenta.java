@@ -16,12 +16,12 @@ private int numOperaciones = 0;
 
 
 	public Cuenta(Cliente pDuenio, double pMonto ) {
+		operaciones = new ArrayList<Operacion> ();
 		sCantCuentas++ ;
 		setNumCuenta(sCantCuentas);
 		depositar(pMonto);
 		setDuenio(pDuenio);
 		setFechaCreacion();
-		operaciones = new ArrayList<Operacion> ();
 				
 	}
 	
@@ -87,6 +87,7 @@ private int numOperaciones = 0;
 		msg	+= duenio.toString() ;
 		msg	+= "Saldo: C" + getSaldo() + "\n";
 		msg += "Registro de Operaciones" + "\n";
+		msg += "Numero"+"Fecha"+"Operacion"+"Monto"+"\n";
 		for (int i = 0; i <operaciones.size();i++)
 		{	
 				Operacion unaOp = (Operacion) operaciones.get(i);

@@ -54,9 +54,9 @@ public class Operacion {
 	}
 
 
-	public void setFechaOperacion(Date fechaOperacion) {
-		this.fechaOperacion = fechaOperacion;
-	}
+	//public void setFechaOperacion(Date fechaOperacion) {
+		//this.fechaOperacion = fechaOperacion;
+//	}
 	public void setFechaOperacion(){
 		Calendar calendario;
 		calendario = Calendar.getInstance();
